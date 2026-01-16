@@ -1,5 +1,8 @@
 # Travel Industry Booking Analytics Platform
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+
 An end-to-end, event-driven data engineering platform that ingests travel booking events, curates analytics-ready datasets, enforces data quality, and delivers AI-powered insights using AWS Bedrock.
 
 This project demonstrates **production-grade data engineering**, **cloud-native architecture**, and **responsible AI integration** applied to a realistic travel industry use case.
