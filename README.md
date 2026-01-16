@@ -188,6 +188,6 @@ The MIT License was chosen to:
 - Make the project safe to share publicly as a portfolio example
 - Align with common open-source and industry practices
 
-See the [LICENSE](LICENSE) file for full details.
+
 
 
