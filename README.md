@@ -167,28 +167,6 @@ It is designed to be **transferable across industries** (travel, manufacturing, 
 > Designed and implemented an event-driven travel booking analytics platform using AWS Lambda, Glue, Athena, Airflow, and Bedrock to ingest, curate, validate, and analyze booking data, delivering AI-powered insights through a natural language interface. Infrastructure provisioned using Terraform with automated CI/CD.
 
 ---
-
-## 🔮 Future Enhancements
-
-- Multi-currency FX normalization
-- Bedrock Knowledge Base integration
-- Row-level security by advisor
-- Streaming ingestion (Kinesis)
-- Advanced AI recommendations
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
-The MIT License was chosen to:
-- Clearly define how the code can be used
-- Allow review, reuse, and modification with attribution
-- Make the project safe to share publicly as a portfolio example
-- Align with common open-source and industry practices
-
-
 ## ✅ Project Completion Status
 
 Based on the current project directory structure and verified Terraform state files, **all six sprints have been fully completed and deployed**.
@@ -255,5 +233,29 @@ Based on the current project directory structure and verified Terraform state fi
 **100% Complete — Production Ready**
 
 All deliverables across all six sprints are present in the codebase, with infrastructure successfully deployed and verified via Terraform state files. The platform is fully operational, end-to-end, from ingestion through analytics and AI-powered insights.
+
+---
+
+## 🔮 Future Enhancements
+
+- Multi-currency FX normalization
+- Bedrock Knowledge Base integration
+- Row-level security by advisor
+- Streaming ingestion (Kinesis)
+- Advanced AI recommendations
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+The MIT License was chosen to:
+- Clearly define how the code can be used
+- Allow review, reuse, and modification with attribution
+- Make the project safe to share publicly as a portfolio example
+- Align with common open-source and industry practices
+
+
 
 
