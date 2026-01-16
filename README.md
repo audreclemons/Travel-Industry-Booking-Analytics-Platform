@@ -28,3 +28,98 @@ INGEST → CURATE → VALIDATE → ANALYZE
 Lambda Glue Python Athena / AI
 ↓ ↓ ↓ ↓
 Raw Data → Curated → Quality → Insight
+
+
+
+**Core Components**
+- **Ingestion**: API Gateway + Lambda
+- **Storage**: S3 Data Lake (raw / curated)
+- **Processing**: AWS Glue ETL
+- **Orchestration**: Apache Airflow (ECS)
+- **Analytics**: Athena SQL
+- **AI**: AWS Bedrock (Lambda-based chatbot)
+- **Infrastructure**: Terraform (IaC)
+- **CI/CD**: AWS CodeBuild
+
+---
+
+## 📥 Data Ingestion
+
+### Supported Sources
+- Web forms (client travel requests)
+- Advisor tools (status updates, pricing)
+- Partner systems (simulated APIs/files)
+- Synthetic data generator (testing & scale)
+
+Each ingestion event:
+- Is schema-tolerant
+- Includes `source_system`
+- Is stored unchanged in the **RAW landing zone**
+
+---
+
+## 🧱 Data Layers
+
+### RAW Layer
+- Stores events exactly as received
+- Minimal validation
+- Preserves source-of-truth
+- Optimized for traceability and replay
+
+### CURATED Layer
+- Standardized timestamps and data types
+- Normalized booking statuses
+- Enriched fields (country, traveler segment)
+- Derived metrics (trip duration, cost per traveler)
+- Data quality flags (`is_valid_record`, `dq_issue`)
+
+### ANALYTICS Layer
+- KPI-ready datasets
+- Funnel analysis
+- Revenue and conversion metrics
+- Optimized for dashboards and AI queries
+
+---
+
+## 🧠 AI Chat (AWS Bedrock)
+
+The platform includes a **Travel Advisor AI Chatbot** built with AWS Bedrock and Lambda.
+
+### Key Principles
+- AI queries **only curated data**
+- No hallucination from raw events
+- Business logic enforced before AI reasoning
+
+### Example Questions
+- “Show UK bookings for couples under $2,500”
+- “Which destinations convert best this month?”
+- “Compare Ghana vs South Africa average booking value”
+- “Summarize low-cost options and recommend next steps”
+
+---
+
+## 🧪 Data Quality & Validation
+
+Validation is treated as a first-class concern:
+- Landing zone validation scripts
+- Schema checks for required fields
+- Source system enforcement
+- Record-level quality flags
+- Pipeline-level metrics
+
+---
+
+## ⚙️ Repository Structure
+
+travel-industry-booking-analytics/
+├── ingestion/ # Lambda ingestion + validation
+├── glue/ # ETL transformations
+├── sql/ # Athena analytics queries
+├── ai_chat/ # Bedrock chatbot logic
+├── airflow/ # DAGs & orchestration
+├── data/ # Synthetic data generation
+├── dashboards/ # KPI & monitoring configs
+├── infrastructure/ # Terraform IaC
+├── tests/ # Validation & tests
+├── buildspec.yml # CI/CD
+└── README.md
