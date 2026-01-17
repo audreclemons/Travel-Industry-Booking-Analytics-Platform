@@ -149,27 +149,8 @@ travel-industry-booking-analytics/
 
 ---
 
-## 🎯 Why This Project Matters
 
-This project demonstrates:
-- Real-world data engineering patterns
-- Clear separation of raw vs curated data
-- Scalable orchestration and automation
-- Responsible AI usage grounded in analytics data
-- End-to-end ownership from ingestion to insights
-
-It is designed to be **transferable across industries** (travel, manufacturing, finance, healthcare).
-
----
-
-## 📌 Resume Summary (Suggested)
-
-> Designed and implemented an event-driven travel booking analytics platform using AWS Lambda, Glue, Athena, Airflow, and Bedrock to ingest, curate, validate, and analyze booking data, delivering AI-powered insights through a natural language interface. Infrastructure provisioned using Terraform with automated CI/CD.
-
----
 ## ✅ Project Completion Status
-
-Based on the current project directory structure and verified Terraform state files, **all six sprints have been fully completed and deployed**.
 
 ---
 
