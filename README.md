@@ -33,7 +33,22 @@ Lambda Glue Python Athena / AI
 ↓ ↓ ↓ ↓
 Raw Data → Curated → Quality → Insight
 
+## 📁 Repository Structure
 
+travel-industry-booking-analytics/
+├── ingestion/ # Lambda ingestion + validation
+├── glue/ # ETL transformations (RAW → CURATED → ANALYTICS)
+├── sql/ # Athena analytics queries
+├── ai_chat/ # Bedrock chatbot logic
+├── airflow/ # DAGs & orchestration
+├── data/ # Synthetic data generation
+├── dashboards/ # KPI & pipeline monitoring configs
+├── infrastructure/ # Terraform Infrastructure as Code
+├── tests/ # Validation and test suites
+├── buildspec.yml # CI/CD pipeline (CodeBuild)
+└── README.md
+
+---
 
 **Core Components**
 - **Ingestion**: API Gateway + Lambda
