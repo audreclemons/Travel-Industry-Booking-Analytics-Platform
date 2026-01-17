@@ -113,24 +113,6 @@ Validation is treated as a first-class concern:
 
 ---
 
-## ⚙️ Repository Structure
-
-travel-industry-booking-analytics/
-├── ingestion/ # Lambda ingestion + validation
-├── glue/ # ETL transformations
-├── sql/ # Athena analytics queries
-├── ai_chat/ # Bedrock chatbot logic
-├── airflow/ # DAGs & orchestration
-├── data/ # Synthetic data generation
-├── dashboards/ # KPI & monitoring configs
-├── infrastructure/ # Terraform IaC
-├── tests/ # Validation & tests
-├── buildspec.yml # CI/CD
-└── README.md
-
-
----
-
 ## 🛠️ Tech Stack
 
 - **Languages**: Python, SQL
@@ -152,7 +134,6 @@ travel-industry-booking-analytics/
 
 ## ✅ Project Completion Status
 
----
 
 ### ✅ Sprint 1: Foundation & Infrastructure
 - Terraform infrastructure deployed (state files present)
